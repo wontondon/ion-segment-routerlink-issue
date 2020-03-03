@@ -6,6 +6,7 @@
   </ion-toolbar>
 </ion-header>
 
+<!--
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
@@ -14,4 +15,16 @@
   </ion-header>
 
   <app-explore-container name="Tab 1 page"></app-explore-container>
+</ion-content>
+-->
+<ion-content>
+  <ion-segment>
+    <ion-segment-button routerLink='/tabs/tab1/seg1'>
+      <ion-label>Segement 1</ion-label>
+    </ion-segment-button>
+    <ion-segment-button routerLink='/tabs/tab1/seg2'>
+      <ion-label>Segement 2</ion-label>
+    </ion-segment-button>
+  </ion-segment>
+  <router-outlet></router-outlet>
 </ion-content>
